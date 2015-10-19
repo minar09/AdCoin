@@ -13,6 +13,7 @@
 	<link rel="icon" type="image/ico" href=""></link>
 	<link rel="shortcut icon" href=""></link>
 	<link rel="stylesheet" type="text/css" href="/static/css/BaseStyleSheet.css" />
+	<link rel="stylesheet" type="text/css" href="/static/css/jquery-ui.min.css" />
 	
 	<!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -25,14 +26,16 @@
 </head>
 <body>
 
-	<script type="text/javascript" src="/static/js/BaseScript.js"></script>
-
 	<!-- Google CDN file   https://developers.google.com/speed/libraries/devguide#jquery -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
+	<script type="text/javascript" src="/static/js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="/static/js/jquery-ui.min.js"></script>
 
+		<script type="text/javascript" src="/static/js/BaseScript.js"></script>
 
+	
 <header>
 
 	<div class="navbar-fixed">
@@ -40,13 +43,20 @@
 			<div class="nav-wrapper">
 			  <a href="#" class="brand-logo">Logo</a>
 			  <ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li class="active"><a href="">Home</a></li>
-				<li><a href="">Account</a></li>
-				<li><a href="">Profile</a></li>
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">Account</a></li>
+				<li><a href="#" class="dropdown-button" data-activates="dropdown1">Profile<i class="material-icons right">arrow_drop_down</i></a></li>
 			  </ul>
 			</div>
-		  </nav>
+		</nav>
+		<ul id="dropdown1" class="dropdown-content">
+		  <li><a href="#!">Profile</a></li>
+		  <li><a href="#!">Settings</a></li>
+		  <li class="divider"></li>
+		  <li><a href="#!">Log out</a></li>
+		</ul>
 	</div>
+	
 	
 
 </header>
@@ -63,8 +73,30 @@
 
 
 
-<footer>
-
+<footer class="page-footer">
+  <div class="container">
+	<div class="row">
+	  <div class="col l6 s12">
+		<h5 class="white-text">AdCoin</h5>
+		<p class="grey-text text-lighten-4">A place for watching ads and earning money for your time.</p>
+	  </div>
+	  <div class="col l4 offset-l2 s12">
+		<h5 class="white-text">Quick info</h5>
+		<ul>
+		  <li><a class="grey-text text-lighten-3" href="#!">Support</a></li>
+		  <li><a class="grey-text text-lighten-3" href="#!">Policy</a></li>
+		  <li><a class="grey-text text-lighten-3" href="#!">Statement</a></li>
+		  <li><a class="grey-text text-lighten-3" href="#!">Contact us</a></li>
+		</ul>
+	  </div>
+	</div>
+  </div>
+  <div class="footer-copyright">
+	<div class="container">
+	&copy; 2015 Copyright AdCoin
+	<a class="grey-text text-lighten-4 right" href="#!">More info</a>
+	</div>
+  </div>
 </footer>
-
+		
 </html>
