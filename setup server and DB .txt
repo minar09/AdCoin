@@ -1,0 +1,23 @@
+1. intall python 2.7 (32 bit for no risk)
+
+2.add python path in environment variables' path
+
+3.install pip 
+
+4.install django through pip ( command : pip install django)
+
+5.clone python-django project through git (install git before :P ) (while you're on that, install tortoisegit too)
+
+6. Db installation: install postgresql 32 bit
+
+7. install python package psycopg2 (do it from .exe ,)
+
+8. create a new database under postgresql localhost named "adcoindb"
+   password= password
+
+9.run cmd in the imported folder  (folder e shift+right-click)
+
+10.python manage.py runserver
+
+11. open 127.0.0.1:8000 to get django project (good job, bravo)
+ 
